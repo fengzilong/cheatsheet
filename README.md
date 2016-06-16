@@ -7,10 +7,17 @@ cheatsheet for efficiency and some tricks
 	- [Shortcut](#shortcut)
 		- [Browser](#browser)
 		- [Windows Explorer](#windows-explorer)
-	- [Windows Tricks](#windows-tricks)
+	- [Windows](#windows)
 		- [在当前目录打开命令行窗口](#在当前目录打开命令行窗口)
 		- [node_modules中模块路径太深，无法删除](#nodemodules中模块路径太深无法删除)
-	- [CSS Tricks](#css-tricks)
+	- [NPM](#npm)
+		- [auth](#auth)
+		- [release new version](#release-new-version)
+		- [install](#install)
+	- [Atom Package](#atom-package)
+		- [auth](#auth)
+		- [release new version](#release-new-version)
+	- [CSS](#css)
 
 <!-- /TOC -->
 
@@ -49,7 +56,7 @@ ctrl + shift + N 新建文件夹
 ctrl + shift + R 在当前目录打开cmd
 ```
 
-## Windows Tricks
+## Windows
 
 ### 在当前目录打开命令行窗口
 
@@ -62,6 +69,42 @@ ctrl + shift + R 在当前目录打开cmd
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
 - robocopy empty_dir delete_dir /purge
 
-## CSS Tricks
+## NPM
+
+### auth
+
+```bash
+$ npm whoami
+$ npm login # or npm adduser
+```
+
+### release new version
+
+```bash
+$ npm version patch/minor/major
+$ npm publish
+```
+
+### install
+
+```bash
+$ npm i <moduleName> -S/-D -d
+```
+
+## Atom Package
+
+### auth
+
+```bash
+$ apm login
+```
+
+### release new version
+
+```bash
+$ apm publish patch/minor/major
+```
+
+## CSS
 
 - width: -webkit-fit-content; 宽度自适应内容
