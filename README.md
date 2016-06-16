@@ -1,6 +1,19 @@
 # cheatsheet
 cheatsheet for efficiency and some tricks
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [cheatsheet](#cheatsheet)
+	- [Shortcut](#shortcut)
+		- [Browser](#browser)
+		- [Windows Explorer](#windows-explorer)
+	- [Windows Tricks](#windows-tricks)
+		- [在当前目录打开命令行窗口](#在当前目录打开命令行窗口)
+		- [node_modules中模块路径太深，无法删除](#nodemodules中模块路径太深无法删除)
+	- [CSS Tricks](#css-tricks)
+
+<!-- /TOC -->
+
 ## Shortcut
 
 ### Browser
