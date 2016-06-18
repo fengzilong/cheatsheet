@@ -21,9 +21,9 @@ cheatsheet for efficiency and some tricks
 
 <!-- /TOC -->
 
-## Shortcut
+## Shortcuts
 
-### Browser
+### Chrome
 
 ```
 ctrl + L 聚焦地址栏
@@ -50,10 +50,10 @@ ctrl + shift + C 选择页面元素(开发者工具打开)
 
 ```
 ctrl + L 聚焦地址栏
-win + E 打开一个新的资源管理器
 ctrl + W 关闭当前窗口
 ctrl + shift + N 新建文件夹
 ctrl + shift + R 在当前目录打开cmd
+win + E 打开一个新的资源管理器
 ```
 
 ## Windows
@@ -62,7 +62,7 @@ ctrl + shift + R 在当前目录打开cmd
 
 - ctrl + shift + R
 - 在资源管理器的地址栏输入cmd并回车
-- 按住shift，在当前文件夹空白处右键，右键菜单会出现“在此处打开命令行窗口”
+- 按住shift，在文件夹空白处右键，右键菜单中会出现“在此处打开命令行窗口”
 
 ### node_modules中模块路径太深，无法删除
 
