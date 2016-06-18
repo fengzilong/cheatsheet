@@ -4,10 +4,12 @@ cheatsheet for efficiency and some tricks
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [cheatsheet](#cheatsheet)
-	- [Shortcut](#shortcut)
-		- [Browser](#browser)
+	- [Shortcuts](#shortcuts)
+		- [Chrome](#chrome)
+		- [Atom](#atom)
+		- [Photoshop](#photoshop)
 		- [Windows Explorer](#windows-explorer)
-	- [Windows](#windows)
+	- [Windows Tricks](#windows-tricks)
 		- [在当前目录打开命令行窗口](#在当前目录打开命令行窗口)
 		- [node_modules中模块路径太深，无法删除](#nodemodules中模块路径太深无法删除)
 	- [NPM](#npm)
@@ -46,6 +48,31 @@ ctrl + shift + M 切换手机模式(开发者工具打开)
 ctrl + shift + C 选择页面元素(开发者工具打开)
 ```
 
+### Atom
+
+```
+ctrl + shift + \ 在treeview中显示当前文件
+ctrl + \ toggle treeview
+ctrl + alt + I 打开Devtools
+ctrl + D 选中下一个内容相同的选区
+```
+
+### Photoshop
+
+```
+C 裁剪
+V 选择
+M 选区
+Space 移动
+ctrl + shift + alt + S 保存png等格式
+ctrl + G 分组
+ctrl + shift + I 反选选区
+ctrl + shift + V 原位置粘贴
+ctrl + T 形变
+ctrl + 鼠标点击图层 选中当前图层像素对应的选区
+alt + 鼠标点击蒙版 编辑蒙版
+```
+
 ### Windows Explorer
 
 ```
@@ -56,7 +83,7 @@ ctrl + shift + R 在当前目录打开cmd
 win + E 打开一个新的资源管理器
 ```
 
-## Windows
+## Windows Tricks
 
 ### 在当前目录打开命令行窗口
 
