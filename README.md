@@ -40,6 +40,7 @@ ctrl + shift + Tab 切换至上一个标签页
 ctrl + Tab 切换至下一个标签页
 ctrl + W 关闭当前标签页
 ctrl + shift + W 关闭所有标签页
+ctrl + shift + T 恢复标签页
 ctrl + shift + I 切换Elements面板
 ctrl + shift + J 切换Console面板
 ctrl + [ 切换至上一个面板(开发者工具打开)
