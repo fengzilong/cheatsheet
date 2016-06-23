@@ -20,8 +20,8 @@ cheatsheet for efficiency and some tricks
 		- [auth](#auth)
 		- [release new version](#release-new-version)
 	- [Snippets](#snippets)
-		- [js](#js)
-		- [css](#css)
+		- [JavaScript](#javascript)
+		- [CSS](#css)
 
 <!-- /TOC -->
 
@@ -143,9 +143,9 @@ $ apm publish patch/minor/major
 
 ## Snippets
 
-### js
+### JavaScript
 
-- How to slice arguments without leaking them
+- how to slice arguments without leaking them
 
 > https://gist.github.com/WebReflection/4327762cb87a8c634a29
 
@@ -200,7 +200,7 @@ function slice() {'use strict';
 }(Function.prototype));
 ```
 
-### css
+### CSS
 
 ```css
 /* 宽度自适应内容 */
