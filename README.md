@@ -19,7 +19,9 @@ cheatsheet for efficiency and some tricks
 	- [Atom Package](#atom-package)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
-	- [CSS](#css)
+	- [Snippets](#snippets)
+		- [js](#js)
+		- [css](#css)
 
 <!-- /TOC -->
 
@@ -52,7 +54,7 @@ ctrl + shift + C 选择页面元素(开发者工具打开)
 ### Atom
 
 ```
-ctrl + shift + \ 在treeview中显示当前文件
+ctrl + shift + \ 在treeview中找到当前文件
 ctrl + \ 切换treeview
 ctrl + alt + I 打开Devtools
 ctrl + D 选中下一个内容相同的选区
@@ -139,6 +141,68 @@ $ apm login
 $ apm publish patch/minor/major
 ```
 
-## CSS
+## Snippets
 
-- width: -webkit-fit-content; 宽度自适应内容
+### js
+
+- How to slice arguments without leaking them
+
+> https://gist.github.com/WebReflection/4327762cb87a8c634a29
+
+```js
+// Andrea Giammarchi, WTFPL
+function slice() {'use strict';
+  for (var
+    o = +this,                // offset
+    i = o,                    // start index
+    l = arguments.length,     // length
+    n = l - o,                // new length
+    a = Array(n < 0 ? 0 : n); // new Array
+    i < l; i++
+  ) a[i - o] = arguments[i];
+  return a;
+}
+
+/**
+ * @example
+(function () {
+  slice.apply(0, arguments); // [1,2,3]
+  slice.apply(1, arguments); // [2,3]
+  slice.apply(6, arguments); // []
+}(1,2,3));
+ */
+```
+
+- fast bind
+
+> https://gist.github.com/WebReflection/40e68a4f603ef788121a
+
+```js
+(function (FunctionPrototype) {
+  'use strict';
+  var originalBind = FunctionPrototype.bind;
+  if (!originalBind.patched) {
+    Object.defineProperty(
+      FunctionPrototype,
+      'bind',
+      {
+        configurable: true,
+        value: function bind(context) {
+          var callback = this;
+          return arguments.length === 1 ?
+              function () { return callback.apply(context, arguments); } :
+              originalBind.apply(callback, arguments);
+        }
+      }
+    );
+    FunctionPrototype.bind.patched = true;
+  }
+}(Function.prototype));
+```
+
+### css
+
+```css
+/* 宽度自适应内容 */
+width: -webkit-fit-content
+```
