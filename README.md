@@ -104,7 +104,7 @@ win + E 打开一个新的资源管理器
 ### node_modules中模块路径太深，无法删除
 
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
-- mkdir tmp && robocopy tmp node_modules /purge && rmdir tmp && rmdir node_modules
+- mkdir tmp && robocopy tmp node_modules /purge
 
 ## NPM
 
