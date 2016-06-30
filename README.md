@@ -10,8 +10,12 @@ cheatsheet for efficiency and some tricks
 		- [Photoshop](#photoshop)
 		- [Windows Explorer](#windows-explorer)
 	- [Windows Tricks](#windows-tricks)
-		- [在当前目录打开命令行窗口](#在当前目录打开命令行窗口)
-		- [node_modules中模块路径太深，无法删除](#nodemodules中模块路径太深无法删除)
+		- [open cmd in current folder](#open-cmd-in-current-folder)
+		- [files in node_modules can not be deleted](#files-in-nodemodules-can-not-be-deleted)
+		- [create file whose name starts with dot](#create-file-whose-name-starts-with-dot)
+	- [NVM](#nvm)
+		- [list all available node versions](#list-all-available-node-versions)
+		- [use specific node version](#use-specific-node-version)
 	- [NPM](#npm)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
@@ -19,6 +23,8 @@ cheatsheet for efficiency and some tricks
 	- [Atom Package](#atom-package)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
+	- [Package.json](#packagejson)
+		- [dependencies version](#dependencies-version)
 	- [Snippets](#snippets)
 		- [JavaScript](#javascript)
 		- [CSS](#css)
@@ -95,16 +101,20 @@ win + E 打开一个新的资源管理器
 
 ## Windows Tricks
 
-### 在当前目录打开命令行窗口
+### open cmd in current folder
 
 - ctrl + shift + R
 - 在资源管理器的地址栏输入cmd并回车
 - 按住shift，在文件夹空白处右键，右键菜单中会出现“在此处打开命令行窗口”
 
-### node_modules中模块路径太深，无法删除
+### files in node_modules can not be deleted
 
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
 - mkdir tmp && robocopy tmp node_modules /purge
+
+### create file whose name starts with dot
+
+- 假如你要输入的文件名是`.dev`，输入文件名`.dev.`，回车即可
 
 ## NVM
 
