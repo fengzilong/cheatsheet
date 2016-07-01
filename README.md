@@ -17,8 +17,10 @@ cheatsheet for efficiency and some tricks
 		- [list all available node versions](#list-all-available-node-versions)
 		- [use specific node version](#use-specific-node-version)
 	- [NPM](#npm)
+		- [show installation detail](#show-installation-detail)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
+		- [check for outdated dependencies](#check-for-outdated-dependencies)
 		- [install](#install)
 	- [Atom Package](#atom-package)
 		- [auth](#auth)
@@ -132,6 +134,12 @@ $ nvm use <version>
 
 ## NPM
 
+### show installation detail
+
+```bash
+$ npm i <packageName> -d
+```
+
 ### auth
 
 ```bash
@@ -144,6 +152,12 @@ $ npm login # or npm adduser
 ```bash
 $ npm version patch/minor/major
 $ npm publish
+```
+
+### check for outdated dependencies
+
+```bash
+$ npm outdated
 ```
 
 ### install
