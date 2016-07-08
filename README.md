@@ -97,7 +97,6 @@ alt + 鼠标点击蒙版 编辑蒙版
 ctrl + L 聚焦地址栏
 ctrl + W 关闭当前窗口
 ctrl + shift + N 新建文件夹
-ctrl + shift + R 在当前目录打开cmd
 win + E 打开一个新的资源管理器
 ```
 
@@ -105,7 +104,7 @@ win + E 打开一个新的资源管理器
 
 ### open cmd in current folder
 
-- ctrl + shift + R
+- ctrl + shift + R(需要安装Listary)
 - 在资源管理器的地址栏输入cmd并回车
 - 按住shift，在文件夹空白处右键，右键菜单中会出现“在此处打开命令行窗口”
 
