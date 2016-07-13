@@ -25,11 +25,16 @@ cheatsheet for efficiency and some tricks
 	- [Atom Package](#atom-package)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
+		- [install your starred packages](#install-your-starred-packages)
+		- [install other user's starred packages](#install-other-users-starred-packages)
 	- [Package.json](#packagejson)
 		- [dependencies version](#dependencies-version)
-	- [Snippets](#snippets)
-		- [JavaScript](#javascript)
-		- [CSS](#css)
+	- [JavaScript Snippets](#javascript-snippets)
+		- [how to slice arguments without leaking them](#how-to-slice-arguments-without-leaking-them)
+		- [fast bind](#fast-bind)
+		- [play sound from arraybuffer](#play-sound-from-arraybuffer)
+	- [CSS Snippets](#css-snippets)
+		- [auto fit content width](#auto-fit-content-width)
 
 <!-- /TOC -->
 
@@ -72,6 +77,16 @@ ctrl + P 模糊查找
 ctrl + shift + P atom中所有的命令
 ctrl + , 打开setting
 ctrl + G 跳转到指定行&列
+ctrl + alt + Q 合并成一行
+ctrl + shift + F2 清除所有书签
+```
+
+自行覆盖的快捷键，请无视
+
+```
+ctrl + F2 toogle书签
+F2 下一个书签
+shift + F2 上一个书签
 ```
 
 ### Photoshop
@@ -179,6 +194,18 @@ $ apm login
 $ apm publish patch/minor/major
 ```
 
+### install your starred packages
+
+```bash
+$ apm stars --install
+```
+
+### install other user's starred packages
+
+```bash
+$ apm stars --user thedaniel --install
+```
+
 ## Package.json
 
 ### dependencies version
@@ -193,11 +220,9 @@ $ apm publish patch/minor/major
 
 > 摘自[package.json文件](http://javascript.ruanyifeng.com/nodejs/packagejson.html#toc2)
 
-## Snippets
+## JavaScript Snippets
 
-### JavaScript
-
-- how to slice arguments without leaking them
+### how to slice arguments without leaking them
 
 > https://gist.github.com/WebReflection/4327762cb87a8c634a29
 
@@ -225,7 +250,7 @@ function slice() {'use strict';
  */
 ```
 
-- fast bind
+### fast bind
 
 > https://gist.github.com/WebReflection/40e68a4f603ef788121a
 
@@ -252,7 +277,34 @@ function slice() {'use strict';
 }(Function.prototype));
 ```
 
-### CSS
+### play sound from arraybuffer
+
+```js
+const context = new AudioContext();
+
+function playSound( buffer ) {
+	const source = context.createBufferSource();
+	source.buffer = buffer;
+	source.connect( context.destination );
+	source.start( 0 );
+}
+
+fetch( `https://dict.youdao.com/dictvoice?type=2&audio=word` )
+	.then(response => response.arrayBuffer())
+	.then(buffer => {
+		try {
+			context.decodeAudioData(buffer, b => {
+				playSound( b );
+			});
+		} catch( e ) {
+
+		}
+	});
+```
+
+## CSS Snippets
+
+### auto fit content width
 
 ```css
 /* 宽度自适应内容 */
