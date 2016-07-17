@@ -17,11 +17,11 @@ cheatsheet for efficiency and some tricks
 		- [list all available node versions](#list-all-available-node-versions)
 		- [use specific node version](#use-specific-node-version)
 	- [NPM](#npm)
-		- [show installation detail](#show-installation-detail)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
 		- [check for outdated dependencies](#check-for-outdated-dependencies)
 		- [install](#install)
+		- [show detail during installation](#show-detail-during-installation)
 	- [Atom Package](#atom-package)
 		- [auth](#auth)
 		- [release new version](#release-new-version)
@@ -103,6 +103,7 @@ ctrl + shift + V 原位置粘贴
 ctrl + T 形变
 ctrl + E 合并选中的图层(如果合并后的图层有问题，请先尝试栅格化待合并的图层)
 ctrl + 鼠标点击图层 选中当前图层像素对应的选区
+alt + 鼠标点击图层左侧的`眼睛` solo当前图层
 alt + 鼠标点击蒙版 编辑蒙版
 ```
 
@@ -148,12 +149,6 @@ $ nvm use <version>
 
 ## NPM
 
-### show installation detail
-
-```bash
-$ npm i <packageName> -d
-```
-
 ### auth
 
 ```bash
@@ -177,7 +172,13 @@ $ npm outdated
 ### install
 
 ```bash
-$ npm i <moduleName> [-S/-D] -d
+$ npm i <moduleName> [-S/-D]
+```
+
+### show detail during installation
+
+```bash
+$ npm i <packageName> -d
 ```
 
 ## Atom Package
