@@ -11,8 +11,8 @@ cheatsheet for efficiency and some tricks
 		- [Windows Explorer](#windows-explorer)
 	- [Windows Tricks](#windows-tricks)
 		- [open cmd in current folder](#open-cmd-in-current-folder)
-		- [files in node_modules can not be deleted](#files-in-nodemodules-can-not-be-deleted)
-		- [create file whose name starts with dot](#create-file-whose-name-starts-with-dot)
+		- [files in node modules can not be deleted](#files-in-node-modules-can-not-be-deleted)
+		- [create .xxx file](#create-xxx-file)
 	- [NVM](#nvm)
 		- [list all available node versions](#list-all-available-node-versions)
 		- [use specific node version](#use-specific-node-version)
@@ -29,6 +29,8 @@ cheatsheet for efficiency and some tricks
 		- [install other user's starred packages](#install-other-users-starred-packages)
 	- [Package.json](#packagejson)
 		- [dependencies version](#dependencies-version)
+	- [Git](#git)
+		- [push local folder to github](#push-local-folder-to-github)
 	- [JavaScript Snippets](#javascript-snippets)
 		- [how to slice arguments without leaking them](#how-to-slice-arguments-without-leaking-them)
 		- [fast bind](#fast-bind)
@@ -124,12 +126,13 @@ win + E 打开一个新的资源管理器
 - 在资源管理器的地址栏输入cmd并回车
 - 按住shift，在文件夹空白处右键，右键菜单中会出现“在此处打开命令行窗口”
 
-### files in node_modules can not be deleted
+### files in node modules can not be deleted
 
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
 - mkdir tmp && robocopy tmp node_modules /purge
+- `npm i nmd -g`，在node_modules所在文件夹执行nmd即可
 
-### create file whose name starts with dot
+### create .xxx file
 
 - 假如你要输入的文件名是`.dev`，输入文件名`.dev.`，回车即可
 
@@ -220,6 +223,18 @@ $ apm stars --user thedaniel --install
 >latest：安装最新版本。
 
 > 摘自[package.json文件](http://javascript.ruanyifeng.com/nodejs/packagejson.html#toc2)
+
+## Git
+
+### push local folder to github
+
+```bash
+$ git init
+$ git add -A
+$ git commit -m "init"
+$ git remote add origin git@github.com:<your_username>/<your_repo_name>.git
+$ git push -u origin master
+```
 
 ## JavaScript Snippets
 
