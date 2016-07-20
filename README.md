@@ -130,7 +130,7 @@ win + E 打开一个新的资源管理器
 
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
 - mkdir tmp && robocopy tmp node_modules /purge
-- `npm i nmd -g`，在node_modules所在文件夹执行nmd即可
+- `npm i nmd-cli -g`，在node_modules所在文件夹执行nmd即可
 
 ### create .xxx file
 
