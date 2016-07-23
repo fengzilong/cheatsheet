@@ -31,6 +31,9 @@ cheatsheet for efficiency and some tricks
 		- [dependencies version](#dependencies-version)
 	- [Git](#git)
 		- [push local folder to github](#push-local-folder-to-github)
+	- [Electron](#electron)
+		- [prevent load local files when drag to electron window](#prevent-load-local-files-when-drag-to-electron-window)
+		- [can't find module xxx after packaging](#cant-find-module-xxx-after-packaging)
 	- [JavaScript Snippets](#javascript-snippets)
 		- [how to slice arguments without leaking them](#how-to-slice-arguments-without-leaking-them)
 		- [fast bind](#fast-bind)
@@ -64,6 +67,8 @@ ctrl + [ 切换至上一个面板(开发者工具打开)
 ctrl + ] 切换至下一个面板(开发者工具打开)
 ctrl + shift + M 切换手机模式(开发者工具打开)
 ctrl + shift + C 选择页面元素(开发者工具打开)
+Shift + 点击Elements面板侧边栏中的某个色值，切换颜色格式
+Ctrl + 点击Elements面板侧边栏的某个样式，寻找样式所在文件位置
 ```
 
 ### Atom
@@ -235,6 +240,36 @@ $ git commit -m "init"
 $ git remote add origin git@github.com:<your_username>/<your_repo_name>.git
 $ git push -u origin master
 ```
+
+## Electron
+
+### prevent load local files when drag to electron window
+
+```js
+win.webContents.on('will-navigate', event => {
+	event.preventDefault();
+	return false;
+});
+```
+
+```js
+document.addEventListener('dragover', function( event ) {
+	event.preventDefault();
+	return false;
+}, false);
+
+document.addEventListener('drop', function( event ) {
+	event.preventDefault();
+	// let files = event.dataTransfer.files;
+	return false;
+}, false);
+```
+
+参考：https://github.com/electron/electron/issues/5919
+
+### can't find module xxx after packaging
+
+打包前正常，打包后报`can't find module xxx`的错误，之前一次遇到是因为安装titlebar的时候没有保存到package.json的依赖列表中，重新用npm i titlebar -S安装，再打包，没有出现报错
 
 ## JavaScript Snippets
 
