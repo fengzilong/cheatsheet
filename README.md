@@ -69,6 +69,8 @@ ctrl + shift + M 切换手机模式(开发者工具打开)
 ctrl + shift + C 选择页面元素(开发者工具打开)
 Shift + 点击Elements面板侧边栏中的某个色值，切换颜色格式
 Ctrl + 点击Elements面板侧边栏的某个样式，寻找样式所在文件位置
+Alt + <- 后退
+Alt + -> 前进
 ```
 
 ### Atom
