@@ -1,5 +1,6 @@
 # cheatsheet
-cheatsheet for efficiency and some tricks
+
+> cheatsheet for efficiency and some tricks
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -32,12 +33,13 @@ cheatsheet for efficiency and some tricks
 	- [Git](#git)
 		- [push local folder to github](#push-local-folder-to-github)
 	- [Electron](#electron)
-		- [prevent load local files when drag to electron window](#prevent-load-local-files-when-drag-to-electron-window)
+		- [prevent redirect when drop files into electron window](#prevent-redirect-when-drop-files-into-electron-window)
 		- [can't find module xxx after packaging](#cant-find-module-xxx-after-packaging)
 	- [JavaScript Snippets](#javascript-snippets)
 		- [how to slice arguments without leaking them](#how-to-slice-arguments-without-leaking-them)
 		- [fast bind](#fast-bind)
 		- [play sound from arraybuffer](#play-sound-from-arraybuffer)
+		- [escape regexp](#escape-regexp)
 	- [CSS Snippets](#css-snippets)
 		- [auto fit content width](#auto-fit-content-width)
 
@@ -245,7 +247,7 @@ $ git push -u origin master
 
 ## Electron
 
-### prevent load local files when drag to electron window
+### prevent redirect when drop files into electron window
 
 ```js
 win.webContents.on('will-navigate', event => {
@@ -354,6 +356,41 @@ fetch( `https://dict.youdao.com/dictvoice?type=2&audio=word` )
 		}
 	});
 ```
+
+### escape regexp
+
+```js
+function escapeRegExp(string){
+	return string.replace(/([.*+?^=!:${}()|[\]\/\\])/g, "\\$&"); //$&表示被匹配的字符串
+}
+```
+
+比如这样一个字符串
+
+```
+~!@#$%^&*()_+{}|:"<>?[];',./-=！￥…（）—：“《》？【】、；‘，。·～＠＃％＆×＋｛｝｜”＼’－＝
+```
+
+转义其中需要转义的部分
+
+```js
+escapeRegExp(`~!@#$%^&*()_+{}|:"<>?[];',./-=！￥…（）—：“《》？【】、；‘，。·～＠＃％＆×＋｛｝｜”＼’－＝`)
+```
+
+结果
+
+```
+~\!@#\$%\^&\*\(\)_\+\{\}\|\:"<>\?\[\];',\.\/-\=！￥…（）—：“《》？【】、；‘，。·～＠＃％＆×＋｛｝｜”＼’－＝
+```
+
+这样就能直接放到正则中使用了
+
+```js
+/^[~\!@#\$%\^&\*\(\)_\+\{\}\|\:"<>\?\[\];',\.\/-\=！￥…（）—：“《》？【】、；‘，。·～＠＃％＆×＋｛｝｜”＼’－＝]+$/.test( '#' );
+```
+
+参考：[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+
 
 ## CSS Snippets
 
