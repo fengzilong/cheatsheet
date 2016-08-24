@@ -32,6 +32,7 @@
 		- [dependencies version](#dependencies-version)
 	- [Git](#git)
 		- [push local folder to github](#push-local-folder-to-github)
+		- [push and set upstream](#push-and-set-upstream)
 	- [Electron](#electron)
 		- [prevent redirect when drop files into electron window](#prevent-redirect-when-drop-files-into-electron-window)
 		- [can't find module xxx after packaging](#cant-find-module-xxx-after-packaging)
@@ -243,6 +244,12 @@ $ git add -A
 $ git commit -m "init"
 $ git remote add origin git@github.com:<your_username>/<your_repo_name>.git
 $ git push -u origin master
+```
+
+### push and set upstream
+
+```bash
+$ git push -u origin branchName
 ```
 
 ## Electron
