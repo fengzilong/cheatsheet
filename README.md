@@ -1,6 +1,6 @@
 # cheatsheet
 
-> cheatsheet for efficiency and some tricks
+> cheatsheet for efficiency and some other tricks
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -41,6 +41,7 @@
 		- [fast bind](#fast-bind)
 		- [play sound from arraybuffer](#play-sound-from-arraybuffer)
 		- [escape regexp](#escape-regexp)
+		- [log some variables in format](#log-some-variables-in-format)
 	- [CSS Snippets](#css-snippets)
 		- [auto fit content width](#auto-fit-content-width)
 
@@ -397,6 +398,12 @@ escapeRegExp(`~!@#$%^&*()_+{}|:"<>?[];',./-=！￥…（）—：“《》？【
 ```
 
 参考：[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+### log some variables in format
+
+```js
+console.log('new: %s, old: %s', new, old);
+```
 
 
 ## CSS Snippets
