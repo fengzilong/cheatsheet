@@ -253,6 +253,14 @@ $ git push -u origin master
 $ git push -u origin branchName
 ```
 
+## GitHub
+
+### search something in certain path in repo
+
+```
+<keyword> path:<path>
+```
+
 ## Electron
 
 ### prevent redirect when drop files into electron window
