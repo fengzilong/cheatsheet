@@ -33,9 +33,12 @@
 	- [Git](#git)
 		- [push local folder to github](#push-local-folder-to-github)
 		- [push and set upstream](#push-and-set-upstream)
+	- [GitHub](#github)
+		- [search something in certain path in repo](#search-something-in-certain-path-in-repo)
 	- [Electron](#electron)
 		- [prevent redirect when drop files into electron window](#prevent-redirect-when-drop-files-into-electron-window)
 		- [can't find module xxx after packaging](#cant-find-module-xxx-after-packaging)
+		- [launch at login](#launch-at-login)
 	- [JavaScript Snippets](#javascript-snippets)
 		- [how to slice arguments without leaking them](#how-to-slice-arguments-without-leaking-them)
 		- [fast bind](#fast-bind)
@@ -290,6 +293,12 @@ document.addEventListener('drop', function( event ) {
 ### can't find module xxx after packaging
 
 打包前正常，打包后报`can't find module xxx`的错误，之前一次遇到是因为安装titlebar的时候没有保存到package.json的依赖列表中，重新用npm i titlebar -S安装，再打包，没有出现报错
+
+### launch at login
+
+> electron added built-in support for launching at login using app.setLoginItemSettings. One drawback is that it only works for macOS and Windows at the moment, whereas the auto-launch npm package works on Linux too
+
+参考：https://github.com/muan/mojibar/issues/67
 
 ## JavaScript Snippets
 
