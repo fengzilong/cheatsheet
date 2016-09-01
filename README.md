@@ -431,3 +431,11 @@ console.log('new: %s, old: %s', new, old);
 /* 宽度自适应内容 */
 width: -webkit-fit-content
 ```
+
+### @supports
+
+```css
+@supports( display: grid ) {
+	/* ... */
+}
+```
