@@ -416,7 +416,7 @@ escapeRegExp(`~!@#$%^&*()_+{}|:"<>?[];',./-=！￥…（）—：“《》？【
 
 参考：[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-### log some variables in format
+### log string in format
 
 ```js
 console.log('new: %s, old: %s', new, old);
