@@ -256,6 +256,12 @@ $ git push -u origin master
 $ git push -u origin branchName
 ```
 
+### checkout last used branch
+
+```bash
+$ git checkout -
+```
+
 ## GitHub
 
 ### search something in certain path in repo
