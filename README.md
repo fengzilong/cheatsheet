@@ -270,6 +270,15 @@ $ git checkout -
 <keyword> path:<path>
 ```
 
+### Readme
+
+<kbd>Ctrl</kbd> + <kbd>C</kbd>
+
+```diff
+- "build": "react-scripts build"
++ "build": "react-scripts build && react-snapshot"
+```
+
 ## Electron
 
 ### prevent redirect when drop files into electron window
