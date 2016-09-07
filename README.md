@@ -270,7 +270,7 @@ $ git checkout -
 <keyword> path:<path>
 ```
 
-### Readme
+### readme
 
 <kbd>Ctrl</kbd> + <kbd>C</kbd>
 
