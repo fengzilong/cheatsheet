@@ -315,6 +315,14 @@ document.addEventListener('drop', function( event ) {
 
 参考：https://github.com/muan/mojibar/issues/67
 
+## JavaScript
+
+### const is block-scoped
+
+Constants are block-scoped, much like variables defined using the let statement
+
+参考：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
