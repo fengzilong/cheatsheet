@@ -214,6 +214,19 @@ npm adds `node_modules/.bin` for searching `onchange` package, it means you don'
 
 参考：https://docs.npmjs.com/cli/run-script
 
+### custom arguments when executing npm scripts
+
+```bash
+$ npm run test -- --grep="pattern"
+```
+
+> As of npm@2.0.0, you can use custom arguments when executing scripts. The special option -- is used by getopt to delimit the end of the options. npm will pass all the arguments after the -- directly to your script
+
+> The arguments will only be passed to the script specified after npm run and not to any pre or post script
+
+参考：https://docs.npmjs.com/cli/run-script
+
+
 ## Atom Package
 
 ### auth
