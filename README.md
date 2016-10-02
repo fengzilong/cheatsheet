@@ -198,6 +198,22 @@ $ npm i <moduleName> [-S/-D]
 $ npm i <packageName> -d
 ```
 
+### package searching in npm scripts
+
+e.g.
+```json
+{
+	"scripts": {
+		"dev": "onchange ..."
+	}
+}
+```
+npm adds `node_modules/.bin` for searching `onchange` package, it means you don't have to write the `node_modules/.bin` prefix
+
+> In addition to the shell's pre-existing PATH, npm run adds node_modules/.bin to the PATH provided to scripts. Any binaries provided by locally-installed dependencies can be used without the node_modules/.bin prefix
+
+参考：https://docs.npmjs.com/cli/run-script
+
 ## Atom Package
 
 ### auth
