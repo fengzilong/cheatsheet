@@ -189,7 +189,7 @@ $ npm outdated
 ### install
 
 ```bash
-$ npm i <moduleName> [-S/-D]
+$ npm i <packageName> [-S/-D]
 ```
 
 ### show detail during installation
@@ -285,7 +285,7 @@ $ git push -u origin master
 $ git push -u origin branchName
 ```
 
-### checkout last used branch
+### checkout to previous branch
 
 ```bash
 $ git checkout -
@@ -293,7 +293,7 @@ $ git checkout -
 
 ## GitHub
 
-### search something in certain path in repo
+### search in certain path in github repo
 
 ```
 <keyword> path:<path>
