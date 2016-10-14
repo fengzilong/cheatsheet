@@ -140,7 +140,7 @@ win + E 打开一个新的资源管理器
 - 在资源管理器的地址栏输入cmd并回车
 - 按住shift，在文件夹空白处右键，右键菜单中会出现“在此处打开命令行窗口”
 
-### files in node modules can not be deleted
+### force delete files in node_modules
 
 - 最笨的办法，进入目录里面，剪切至路径较浅的目录再删除
 - mkdir tmp && robocopy tmp node_modules /purge
