@@ -243,6 +243,12 @@ npm install will copy (and npm install) the package into the target's node_modul
 
 This is not an ideal workflow during development: any time you modify your local dependency, you must reinstall it in every location that depends on it. If you do not update all copies, you will have different versions of the same code, probably under the same version number.
 
+本地有两个npm packages，A和B存在依赖关系，假设A依赖B，可以A中require B的本地代码，这样在安装B的时候，npm就会通过指定的本地路径将B安装到A的node_modules中
+
+具体使用参考：[eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import/blob/001b8de7fb067167ee1d53252cff914e9b93464c/package.json#L59)
+
+devDependencies和dependencies中都声明了`eslint-import-resolver-node`的依赖，但devDependencies中用的是本地代码，调试通过后再发布当前仓库和`eslint-import-resolver-node`到npm
+
 参考：https://github.com/timoxley/linklocal#about
 
 
