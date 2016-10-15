@@ -226,6 +226,25 @@ $ npm run test -- --grep="pattern"
 
 参考：https://docs.npmjs.com/cli/run-script
 
+### install from local folder as dependency
+
+npm 2.0.0 [supports specifying local dependencies in your package.json](https://docs.npmjs.com/files/package.json#local-paths):
+
+> npm install --save ../apple
+> cat package.json
+{
+  "name": "bowl",
+  "version": "1.0.0",
+  "dependencies": {
+    "apple": "file:../apple"
+  }
+}
+npm install will copy (and npm install) the package into the target's node_module's hierarchy.
+
+This is not an ideal workflow during development: any time you modify your local dependency, you must reinstall it in every location that depends on it. If you do not update all copies, you will have different versions of the same code, probably under the same version number.
+
+参考：https://github.com/timoxley/linklocal#about
+
 
 ## Atom Package
 
