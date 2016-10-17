@@ -251,6 +251,45 @@ devDependencies和dependencies中都声明了`eslint-import-resolver-node`的依
 
 参考：https://github.com/timoxley/linklocal#about
 
+## yarn
+
+### install all dependencies
+
+```bash
+$ yarn
+```
+
+### install
+
+```bash
+$ yarn add <packageName>
+```
+
+### uninstall
+
+```bash
+$ yarn remove <packageName>
+```
+
+### add devDependencies
+
+```bash
+$ yarn add <packageName> --dev
+```
+
+### add peerDependencies
+
+```bash
+$ yarn add <packageName> --peer
+```
+
+### global install
+
+```bash
+$ yarn global add <packageName>
+```
+
+note: There are some issues with `global add` in windows OS
 
 ## Atom Package
 
