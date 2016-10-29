@@ -198,7 +198,7 @@ $ npm i <packageName> [-S/-D]
 $ npm i <packageName> -d
 ```
 
-### package searching in npm scripts
+### package searching strategy in npm scripts
 
 e.g.
 ```json
