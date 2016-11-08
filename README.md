@@ -331,6 +331,23 @@ $ apm stars --user thedaniel --install
 
 > 摘自[package.json文件](http://javascript.ruanyifeng.com/nodejs/packagejson.html#toc2)
 
+## Webpack
+
+### dynamic require all modules from directory
+
+```js
+const load = requireContext => {
+	return requireContext.keys().map(requireContext)
+}
+
+const modules = load(require.context('./', true, /.js$/))
+```
+
+> requireContext.keys()会返回当前上下文下的所有路径，requireContext本身是一个函数，可以当作require来用(基于某个上下文的)
+
+> 参考：[webpack文档](https://webpack.github.io/docs/context.html#context-module-api)
+
+
 ## Git
 
 ### push local folder to github
