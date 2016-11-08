@@ -89,6 +89,7 @@ ctrl + alt + I 打开Devtools
 ctrl + D 选中下一个内容相同的选区
 A 新建文件(选中treeview中的某个目录后)
 shift + A 新建文件夹(选中treeview中的某个目录后)
+D 复制当前文件到当前目录
 ctrl + P 模糊查找
 ctrl + shift + P atom中所有的命令
 ctrl + , 打开setting
