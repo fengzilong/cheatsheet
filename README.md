@@ -434,6 +434,18 @@ Constants are block-scoped, much like variables defined using the let statement
 
 参考：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
+### es6 解构 + 别名
+
+```js
+const { types: t } = babel;
+```
+
+等价于
+
+```
+const t = babel.types;
+```
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
