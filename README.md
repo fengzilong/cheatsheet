@@ -446,6 +446,10 @@ const { types: t } = babel;
 const t = babel.types;
 ```
 
+### Promise.race([]) returns a forever pending promise
+
+https://twitter.com/jdalton/status/790263748732661760
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
@@ -585,3 +589,11 @@ width: -webkit-fit-content
 	/* ... */
 }
 ```
+
+## Others
+
+> Don’t write “flexible” modules. No matter how you plan, you’ll miss some future requirements. Write modules that are easy to delete.
+
+> This is why composition is better than inheritance. Inheritance = trying to anticipate all future cases. Composition = replaceable units.
+
+https://twitter.com/dan_abramov/status/793124347573665796
