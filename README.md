@@ -426,6 +426,20 @@ document.addEventListener('drop', function( event ) {
 
 参考：https://github.com/muan/mojibar/issues/67
 
+## Webpack
+
+### make webpack output colorful when using webpack-dev-middleware
+
+Add `colors: true`
+
+```js
+webpackDevMiddleware( compiler, {
+	stats: {
+		colors: true
+	}
+} );
+```
+
 ## JavaScript
 
 ### const is block-scoped
