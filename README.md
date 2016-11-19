@@ -348,6 +348,17 @@ const modules = load(require.context('./', true, /.js$/))
 
 > 参考：[webpack文档](https://webpack.github.io/docs/context.html#context-module-api)
 
+### make webpack output colorful when using webpack-dev-middleware
+
+Add `colors: true`
+
+```js
+webpackDevMiddleware( compiler, {
+	stats: {
+		colors: true
+	}
+} );
+```
 
 ## Git
 
@@ -425,20 +436,6 @@ document.addEventListener('drop', function( event ) {
 > electron added built-in support for launching at login using app.setLoginItemSettings. One drawback is that it only works for macOS and Windows at the moment, whereas the auto-launch npm package works on Linux too
 
 参考：https://github.com/muan/mojibar/issues/67
-
-## Webpack
-
-### make webpack output colorful when using webpack-dev-middleware
-
-Add `colors: true`
-
-```js
-webpackDevMiddleware( compiler, {
-	stats: {
-		colors: true
-	}
-} );
-```
 
 ## JavaScript
 
