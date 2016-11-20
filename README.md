@@ -360,6 +360,19 @@ webpackDevMiddleware( compiler, {
 } );
 ```
 
+### hide extra info when bundling with webpack-dev-middleware
+
+```js
+webpackDevMiddleware( compiler, {
+	stats: {
+		modules: false,
+		children: false,
+		chunks: false,
+		chunkModules: false,
+	}
+} );
+```
+
 ## Git
 
 ### push local folder to github
