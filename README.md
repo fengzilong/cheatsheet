@@ -292,6 +292,19 @@ $ yarn global add <packageName>
 
 note: There are some issues with `global add` in windows OS
 
+## Atom
+
+### solve conflicts with emmet-atom and autocomplete-plus
+
+overwrite enter in keymap.cson
+
+```
+'atom-text-editor:not(mini).autocomplete-active':
+    'enter': 'autocomplete-plus:confirm'
+```
+
+参考：https://github.com/emmetio/emmet-atom/issues/146#issuecomment-103475628
+
 ## Atom Package
 
 ### auth
