@@ -348,6 +348,30 @@ const modules = load(require.context('./', true, /.js$/))
 
 > 参考：[webpack文档](https://webpack.github.io/docs/context.html#context-module-api)
 
+### make webpack output colorful when using webpack-dev-middleware
+
+Add `colors: true`
+
+```js
+webpackDevMiddleware( compiler, {
+	stats: {
+		colors: true
+	}
+} );
+```
+
+### hide extra info when bundling with webpack-dev-middleware
+
+```js
+webpackDevMiddleware( compiler, {
+	stats: {
+		modules: false,
+		children: false,
+		chunks: false,
+		chunkModules: false,
+	}
+} );
+```
 
 ## Git
 
@@ -439,6 +463,22 @@ document.addEventListener('drop', function( event ) {
 Constants are block-scoped, much like variables defined using the let statement
 
 参考：[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
+### es6 解构 + 别名
+
+```js
+const { types: t } = babel;
+```
+
+等价于
+
+```
+const t = babel.types;
+```
+
+### Promise.race([]) returns a forever pending promise
+
+https://twitter.com/jdalton/status/790263748732661760
 
 ## JavaScript Snippets
 
@@ -579,3 +619,11 @@ width: -webkit-fit-content
 	/* ... */
 }
 ```
+
+## Others
+
+> Don’t write “flexible” modules. No matter how you plan, you’ll miss some future requirements. Write modules that are easy to delete.
+
+> This is why composition is better than inheritance. Inheritance = trying to anticipate all future cases. Composition = replaceable units.
+
+https://twitter.com/dan_abramov/status/793124347573665796
