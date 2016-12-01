@@ -373,6 +373,12 @@ $ git push -u origin branchName
 $ git checkout -
 ```
 
+### make git case-sensitive
+
+```bash
+$ git config core.ignorecase false
+```
+
 ## GitHub
 
 ### search in certain path in github repo
