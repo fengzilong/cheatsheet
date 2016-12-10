@@ -252,6 +252,14 @@ devDependencies和dependencies中都声明了`eslint-import-resolver-node`的依
 
 参考：https://github.com/timoxley/linklocal#about
 
+### npm.im
+
+https://npm.im/pure-ui
+
+### npm cdn
+
+https://unpkg.com/pure-ui/dist/
+
 ## yarn
 
 ### install all dependencies
