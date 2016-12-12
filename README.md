@@ -477,6 +477,10 @@ document.addEventListener('drop', function( event ) {
 
 参考：https://github.com/muan/mojibar/issues/67
 
+### ready-to-show
+
+在ready-to-show触发后再显示主窗口，可以有更好的体验
+
 ## JavaScript
 
 ### const is block-scoped
