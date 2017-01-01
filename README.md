@@ -165,6 +165,27 @@ $ nvm list
 $ nvm use <version>
 ```
 
+## yrm
+
+### install yrm
+
+```bash
+$ npm i -g yrm
+```
+
+### list
+
+```bash
+$ yrm ls
+```
+
+### use
+
+```bash
+$ yrm use taobao # use taobao registry
+$ yrm use npm # use npm registry
+```
+
 ## NPM
 
 ### auth
