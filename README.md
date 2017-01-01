@@ -300,6 +300,18 @@ $ yarn global add <packageName>
 
 note: There are some issues with `global add` in windows OS
 
+### set registry
+
+```bash
+$ yarn config set registry https://registry.npm.taobao.org
+```
+
+### list all config
+
+```bash
+$ yarn config list
+```
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
