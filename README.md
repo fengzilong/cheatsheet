@@ -333,6 +333,16 @@ $ yarn config set registry https://registry.npm.taobao.org
 $ yarn config list
 ```
 
+## Node
+
+### clear command line console
+
+```js
+process.stdout.write( '\x1bc' );
+```
+
+参考：[friendly-errors-webpack-plugin](https://github.com/geowarin/friendly-errors-webpack-plugin/blob/db5d5c9a48228e31ad429755f2304d9be57b96ba/src/output.js#L60)
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
