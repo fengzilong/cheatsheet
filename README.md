@@ -548,6 +548,27 @@ const t = babel.types;
 
 https://twitter.com/jdalton/status/790263748732661760
 
+### for ... in
+
+for in 循环的顺序和书写的顺序有关
+比如遍历
+```js
+{
+	a: 1,
+	b: 1,
+	c: 1
+}
+```
+和
+```js
+{
+	c: 1,
+	b: 1,
+	a: 1
+}
+```
+的顺序是不一样的
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
