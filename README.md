@@ -709,6 +709,13 @@ width: -webkit-fit-content
 }
 ```
 
+### repeating-linear-gradient
+
+```css
+background-color: #eee;
+background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px,rgba(255,255,255,.5) 5px,rgba(255,255,255,.5) 10px), repeating-linear-gradient(45deg,transparent,transparent 5px,rgba(255,255,255,.5) 5px,rgba(255,255,255,.5) 10px);
+```
+
 ## Others
 
 > Don’t write “flexible” modules. No matter how you plan, you’ll miss some future requirements. Write modules that are easy to delete.
