@@ -569,6 +569,12 @@ for in 循环的顺序和书写的顺序有关
 ```
 的顺序是不一样的
 
+### use yield with an array
+
+```js
+const [ rst0, rst1 ] = yield [ promise0, promise1 ];
+```
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
