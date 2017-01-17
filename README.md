@@ -396,6 +396,18 @@ $ apm stars --user thedaniel --install
 
 > 摘自[package.json文件](http://javascript.ruanyifeng.com/nodejs/packagejson.html#toc2)
 
+### prepublish
+
+```json
+{
+    "scripts": {
+        "prepublish": "..."
+    }
+}
+```
+
+execute some commands before publishing to npm
+
 ## Webpack
 
 ### dynamic require all modules from directory
