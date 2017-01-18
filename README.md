@@ -479,6 +479,15 @@ $ git checkout -
 $ git config core.ignorecase false
 ```
 
+### git pull -> error: unable to resolve reference refs/remotes/origin/xxx
+
+```bash
+rm .git/refs/remotes/origin/xxx
+git fetch
+```
+
+it works for me
+
 ## GitHub
 
 ### search in certain path in github repo
