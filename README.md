@@ -723,7 +723,7 @@ console.log('new: %s, old: %s', new, old);
 const ArrarOfFunctionsReturnPromise = [ ... ];
 ArrarOfFunctionsReturnPromise.reduce( function ( total, current ) {
     return total.then( current );
-} ).then( ... );
+}, Promise.resolve() ).then( ... );
 ```
 
 ## CSS Snippets
