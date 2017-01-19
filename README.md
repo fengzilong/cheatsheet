@@ -717,7 +717,14 @@ escapeRegExp(`~!@#$%^&*()_+{}|:"<>?[];',./-=！￥…（）—：“《》？【
 ```js
 console.log('new: %s, old: %s', new, old);
 ```
+### neat way to chain promises
 
+```js
+const ArrarOfFunctionsReturnPromise = [ ... ];
+ArrarOfFunctionsReturnPromise.reduce( function ( total, current ) {
+    return total.then( current );
+} ).then( ... );
+```
 
 ## CSS Snippets
 
