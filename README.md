@@ -281,6 +281,12 @@ https://npm.im/pure-ui
 
 https://unpkg.com/pure-ui/dist/
 
+### scoped-packages
+
+@开头的npm包
+
+参考：[scoped-packages](https://docs.npmjs.com/getting-started/scoped-packages)
+
 ## yarn
 
 ### install all dependencies
