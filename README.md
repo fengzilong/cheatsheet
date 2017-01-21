@@ -362,6 +362,18 @@ overwrite enter in keymap.cson
 
 参考：https://github.com/emmetio/emmet-atom/issues/146#issuecomment-103475628
 
+### highlight according to file types
+
+```cson
+core:
+   customFileTypes:
+      'text.html.basic': [
+        'rgl'
+      ]
+```
+
+参考：[Customizing Language Recognition](http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-language-recognition)
+
 ## Atom Package
 
 ### auth
