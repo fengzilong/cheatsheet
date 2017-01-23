@@ -467,6 +467,16 @@ webpackDevMiddleware( compiler, {
 } );
 ```
 
+## Lerna
+
+### lerna init
+
+初始化一个monorepo
+
+### lerna bootstrap
+
+packages中的包不需要发布到npm，但是如果没有发布的话需要自己手动在package.json中添加类似^0.1.0的依赖
+
 ## Git
 
 ### push local folder to github
