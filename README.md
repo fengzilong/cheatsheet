@@ -349,6 +349,14 @@ process.stdout.write( '\x1bc' );
 
 参考：[friendly-errors-webpack-plugin](https://github.com/geowarin/friendly-errors-webpack-plugin/blob/db5d5c9a48228e31ad429755f2304d9be57b96ba/src/output.js#L60)
 
+### run global package from command line -> No such file or directory
+
+line-ending为CRLF，改成LF可以解决
+
+> 可以在atom的core packages里面找到line-ending-selectoring，在setting里面修改新建文件时的默认换行符为LF
+
+其他可能的原因在这里有提到 https://github.com/nodejs/node-v0.x-archive/issues/3911#issuecomment-218380292
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
