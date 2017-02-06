@@ -632,6 +632,21 @@ for in 循环的顺序和书写的顺序有关
 const [ rst0, rst1 ] = yield [ promise0, promise1 ];
 ```
 
+### comment
+
+```js
+/* ---------------- 8< -------- 8< ---------------- */
+```
+
+from [proselint](https://github.com/sapegin/proselint/blob/23227be2448518b6003902187ebb27db63d657cf/src/index.js#L32)
+
+```js
+// Backbone.sync
+// -------------
+```
+
+from [backbone](https://github.com/jashkenas/backbone/blob/3141352b83e78a41c524fb69c39219550a056e0d/backbone.js#L1469-L1470)
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
