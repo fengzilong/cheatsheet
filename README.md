@@ -293,6 +293,27 @@ https://unpkg.com/pure-ui/dist/
 $ npm install --production
 ```
 
+### view package versions or tags
+
+```bash
+$ npm view «package-name» versions
+$ npm view «package-name» dist-tags
+```
+
+### publish with tag
+
+```bash
+$ npm publish --tag beta
+```
+
+默认会发布到latest的tag上，tag相当于是一个别名，作为一个特殊的发布通道，和chrome的canary、firefox的nightly是类似的
+
+注意：不要把tag名字用数字或v开头，可能会和semver版本号冲突
+
+参考：
+http://www.2ality.com/2015/12/npm-install-tag-version.html
+https://docs.npmjs.com/getting-started/using-tags
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
