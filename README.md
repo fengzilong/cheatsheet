@@ -287,6 +287,12 @@ https://unpkg.com/pure-ui/dist/
 
 参考：[scoped-packages](https://docs.npmjs.com/getting-started/scoped-packages)
 
+### avoid installing devDependencies
+
+```bash
+$ npm install --production
+```
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
