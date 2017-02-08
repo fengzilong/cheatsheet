@@ -287,6 +287,10 @@ https://unpkg.com/pure-ui/dist/
 
 参考：[scoped-packages](https://docs.npmjs.com/getting-started/scoped-packages)
 
+### more npm tricks
+
+[...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
+
 ## yarn
 
 ### install all dependencies
