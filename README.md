@@ -388,6 +388,12 @@ line-ending为CRLF，改成LF可以解决
 
 其他可能的原因在这里有提到 https://github.com/nodejs/node-v0.x-archive/issues/3911#issuecomment-218380292
 
+### change working directory
+
+```js
+process.chdir( 'path/to/directory' );
+```
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
