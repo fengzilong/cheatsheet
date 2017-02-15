@@ -512,6 +512,17 @@ webpackDevMiddleware( compiler, {
 } );
 ```
 
+### webpack doesn't looking up for peerDependencies in parent node_modules when in soft-linked node_modules
+
+e.g. When using lerna
+
+```js
+resolve: {
+  // 由于软链接后peerDependencies不会主动查找上层node_modules，指定fallback
+  fallback: _.cwd( 'node_modules' ),
+},
+```
+
 ## Lerna
 
 ### lerna init
