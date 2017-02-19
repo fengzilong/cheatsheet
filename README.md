@@ -523,6 +523,14 @@ resolve: {
 },
 ```
 
+## Babel
+
+### babel6 always export a default to exports.default
+
+workaround: [babel-plugin-add-module-exports](https://github.com/59naga/babel-plugin-add-module-exports)
+
+参考：http://stackoverflow.com/questions/34736771/webpack-umd-library-return-object-default
+
 ## Lerna
 
 ### lerna init
