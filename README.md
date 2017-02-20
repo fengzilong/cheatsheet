@@ -597,6 +597,10 @@ it works for me
 + "build": "react-scripts build && react-snapshot"
 ```
 
+### rawgit cdn
+
+e.g. https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html
+
 ## Electron
 
 ### prevent redirect when drop files into electron window
