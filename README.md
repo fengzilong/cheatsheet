@@ -578,6 +578,12 @@ rm .git/refs/remotes/origin/xxx
 git fetch
 ```
 
+### show all global config
+
+```bash
+$ git config --global -l
+```
+
 it works for me
 
 ## GitHub
