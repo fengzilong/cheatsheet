@@ -314,6 +314,12 @@ $ npm publish --tag beta
 http://www.2ality.com/2015/12/npm-install-tag-version.html
 https://docs.npmjs.com/getting-started/using-tags
 
+### clean npm cache
+
+```bash
+$ npm cache clean
+```
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
