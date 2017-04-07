@@ -609,6 +609,11 @@ it works for me
 + "build": "react-scripts build && react-snapshot"
 ```
 
+| foo | bar |
+| :---: | :---: |
+
+☑☐
+
 ### rawgit cdn
 
 e.g. https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html
