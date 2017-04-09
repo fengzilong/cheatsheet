@@ -273,6 +273,10 @@ devDependencies和dependencies中都声明了`eslint-import-resolver-node`的依
 
 参考：https://github.com/timoxley/linklocal#about
 
+### npm t
+
+short for `npm test`
+
 ### npm.im
 
 https://npm.im/pure-ui
