@@ -728,6 +728,14 @@ from [proselint](https://github.com/sapegin/proselint/blob/23227be2448518b600390
 
 from [backbone](https://github.com/jashkenas/backbone/blob/3141352b83e78a41c524fb69c39219550a056e0d/backbone.js#L1469-L1470)
 
+```js
+// ===================== //
+// _nativeFunctionObject //
+// ===================== //
+```
+
+from [otto](https://github.com/robertkrimen/otto/blob/master/type_function.go#L28-L30)
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
