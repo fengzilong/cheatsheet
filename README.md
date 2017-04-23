@@ -551,6 +551,14 @@ workaround: [babel-plugin-add-module-exports](https://github.com/59naga/babel-pl
 
 packages中的包不需要发布到npm，但是如果没有发布的话需要自己手动在package.json中添加类似^0.1.0的依赖
 
+## Command line
+
+### back to previous directory
+
+```bash
+$ cd -
+```
+
 ## Git
 
 ### push local folder to github
