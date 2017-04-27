@@ -318,6 +318,12 @@ $ npm publish --tag beta
 http://www.2ality.com/2015/12/npm-install-tag-version.html
 https://docs.npmjs.com/getting-started/using-tags
 
+### modify npm tag
+
+```bash
+$ npm dist-tag add packagename@1.1.0 latest
+```
+
 ### clean npm cache
 
 ```bash
