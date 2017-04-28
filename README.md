@@ -632,6 +632,10 @@ it works for me
 
 ☑☐
 
+⚠️
+
+⇗
+
 ### rawgit cdn
 
 e.g. https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html
