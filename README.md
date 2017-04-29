@@ -636,6 +636,21 @@ it works for me
 
 ⇗
 
+### badges
+
+[![](https://img.shields.io/badge/made%20with-%e2%9d%a4-ff69b4.svg?style=flat-square)]()
+
+```
+[![](https://img.shields.io/badge/made%20with-%e2%9d%a4-ff69b4.svg?style=flat-square)]()
+```
+
+[![license](https://img.shields.io/badge/license-MIT-000000.svg?style=flat-square)](LICENSE)
+
+
+```
+[![license](https://img.shields.io/badge/license-MIT-000000.svg?style=flat-square)](LICENSE)
+```
+
 ### rawgit cdn
 
 e.g. https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html
