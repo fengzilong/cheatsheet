@@ -330,6 +330,12 @@ $ npm dist-tag add packagename@1.1.0 latest
 $ npm cache clean
 ```
 
+### add package collaborators
+
+```bash
+$ npm owner add <user> <package name>
+```
+
 ### get global node_modules path
 
 ```bash
