@@ -330,6 +330,12 @@ $ npm dist-tag add packagename@1.1.0 latest
 $ npm cache clean
 ```
 
+### get global node_modules path
+
+```bash
+$ npm config get prefix
+```
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
