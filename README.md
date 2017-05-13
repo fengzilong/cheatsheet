@@ -285,6 +285,10 @@ https://npm.im/pure-ui
 
 https://unpkg.com/pure-ui/dist/
 
+### npm search
+
+https://npms.io/
+
 ### scoped-packages
 
 @开头的npm包
