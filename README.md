@@ -618,13 +618,29 @@ rm .git/refs/remotes/origin/xxx
 git fetch
 ```
 
+it works for me
+
 ### show all global config
 
 ```bash
 $ git config --global -l
 ```
 
-it works for me
+### discard unstaged changes
+
+#### a specific file
+
+```bash
+$ git checkout path/to/file
+```
+
+#### all unstaged files
+
+```bash
+$ git checkout -- .
+```
+
+参考：https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git/52713#52713
 
 ## GitHub
 
