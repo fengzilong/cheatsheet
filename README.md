@@ -959,8 +959,14 @@ background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px,r
 
 ## Others
 
+### Don’t write “flexible” modules
+
 > Don’t write “flexible” modules. No matter how you plan, you’ll miss some future requirements. Write modules that are easy to delete.
 
 > This is why composition is better than inheritance. Inheritance = trying to anticipate all future cases. Composition = replaceable units.
 
 https://twitter.com/dan_abramov/status/793124347573665796
+
+### lovely symbols
+
+˗ˏˋ text ˎˊ˗
