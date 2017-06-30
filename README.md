@@ -477,6 +477,16 @@ $ apm stars --install
 $ apm stars --user thedaniel --install
 ```
 
+### get current file scope type
+
+```js
+atom.workspace.getActiveTextEditor().getRootScopeDescriptor()
+```
+
+### how to find grammar scopes
+
+http://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/
+
 ## Package.json
 
 ### dependencies version
