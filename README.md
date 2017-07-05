@@ -346,6 +346,18 @@ $ npm owner add <user> <package name>
 $ npm config get prefix
 ```
 
+### register git subcommand with npm package
+
+```json
+{
+    "git-jira": "bin/jira.js"
+}
+```
+
+`git-jira` and `git jira` both work
+
+参考：https://github.com/commitizen/cz-cli
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
