@@ -825,6 +825,11 @@ from [backbone](https://github.com/jashkenas/backbone/blob/3141352b83e78a41c524f
 
 from [otto](https://github.com/robertkrimen/otto/blob/master/type_function.go#L28-L30)
 
+### Array.prototype.includes
+
+[ NaN ].indexOf( NaN ) === -1
+[ NaN ].includes( NaN ) === true
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
