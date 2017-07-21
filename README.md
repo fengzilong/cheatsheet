@@ -414,6 +414,15 @@ $ yarn config set registry https://registry.npm.taobao.org
 $ yarn config list
 ```
 
+## Koa
+
+### get params
+
+```js
+ctx.request.body // your POST params
+ctx.params // URL params, like :id
+```
+
 ## Node
 
 ### clear command line console
