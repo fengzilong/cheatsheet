@@ -421,6 +421,7 @@ $ yarn config list
 ```js
 ctx.request.body // your POST params
 ctx.params // URL params, like :id
+ctx.query // params from querystring
 ```
 
 ## Node
