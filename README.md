@@ -812,6 +812,15 @@ for in 循环的顺序和书写的顺序有关
 const [ rst0, rst1 ] = yield [ promise0, promise1 ];
 ```
 
+### filter out falsy values
+
+```js
+// filter out falsy values
+[].filter(Boolean)
+```
+
+参考：https://github.com/babel/babel/blob/53ed4e5eb86902cf577e990bfe4f7d917a66ea65/packages/babel-preset-es2015/src/index.js#L72
+
 ### comment
 
 ```js
