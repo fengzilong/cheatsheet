@@ -448,6 +448,20 @@ line-ending为CRLF，改成LF可以解决
 process.chdir( 'path/to/directory' );
 ```
 
+### debug with chrome devtools
+
+```bash
+node --inspect --debug-brk index.js
+```
+
+for node v7+
+
+```bash
+$ node --inspect-brk index.js
+```
+
+参考：https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
