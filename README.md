@@ -820,7 +820,7 @@ for in 循环的顺序和书写的顺序有关
 ```
 的顺序是不一样的
 
-### use yield with an array
+### use yield with an array in co
 
 ```js
 const [ rst0, rst1 ] = yield [ promise0, promise1 ];
