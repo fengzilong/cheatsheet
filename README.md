@@ -1017,6 +1017,14 @@ background-color: #eee;
 background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px,rgba(255,255,255,.5) 5px,rgba(255,255,255,.5) 10px), repeating-linear-gradient(45deg,transparent,transparent 5px,rgba(255,255,255,.5) 5px,rgba(255,255,255,.5) 10px);
 ```
 
+### grid-like
+
+```css
+background-color: rgba(0, 0, 0, 0.05);
+background-image: repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(0, 0, 0, 0.2) 1px, transparent 8px), repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(0, 0, 0, 0.2) 1px, transparent 8px);
+background-size: 8px 8px;
+```
+
 ## Others
 
 ### Don’t write “flexible” modules
