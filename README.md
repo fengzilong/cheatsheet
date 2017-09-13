@@ -462,6 +462,12 @@ $ node --inspect-brk index.js
 
 参考：https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27
 
+### node REPL for multiline support
+
+type ".editor" in your node REPL for multiline support, and hit ^D to execute
+
+参考：https://twitter.com/atticoos/status/893496002933657600
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
