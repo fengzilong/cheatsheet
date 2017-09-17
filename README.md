@@ -1038,6 +1038,14 @@ background-image: repeating-linear-gradient(0deg, transparent, transparent 7px, 
 background-size: 8px 8px;
 ```
 
+### text gradient
+
+```css
+background: -webkit-linear-gradient(left,#00c0f9, #4d8cff, #9f72ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+```
+
 ## Others
 
 ### Don’t write “flexible” modules
