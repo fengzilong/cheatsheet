@@ -1006,6 +1006,12 @@ ArrarOfFunctionsReturnPromise.reduce( function ( total, current ) {
 inspect( fn )
 ```
 
+### measure text in canvas context
+
+```js
+ctx.measureText( 'text' )
+```
+
 ## CSS Snippets
 
 ### auto fit content width
