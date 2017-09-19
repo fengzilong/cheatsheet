@@ -1012,6 +1012,19 @@ inspect( fn )
 ctx.measureText( 'text' )
 ```
 
+### get network status
+
+```js
+navigator.onLine
+```
+
+### network events
+
+```js
+window.addEventListener('online', whenOnline)
+window.addEventListener('offline', whenOffline)
+```
+
 ## CSS Snippets
 
 ### auto fit content width
