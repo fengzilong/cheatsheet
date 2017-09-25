@@ -869,6 +869,13 @@ from [otto](https://github.com/robertkrimen/otto/blob/master/type_function.go#L2
 [ NaN ].indexOf( NaN ) === -1
 [ NaN ].includes( NaN ) === true
 
+### a.splice(i >>> 0, 1) === if (i !== -1) a.splice(i, 1)
+
+因为-1 >>> 0 === 0xFFFFFFFF, max possible array length
+所以上面两者是等价的
+
+参考：https://github.com/ai/nanoevents/blob/f445d5fe7beccdb5ae0c57858444fe9a8b7c38e7/index.js#L66
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
