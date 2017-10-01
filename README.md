@@ -555,6 +555,20 @@ http://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-sco
 
 execute some commands before publishing to npm
 
+### "gulp-babel": "babel/gulp-babel#d8c67b"
+
+```json
+{
+    "devDependencies": {
+        "gulp-babel": "babel/gulp-babel#d8c67b"
+    }
+}
+```
+
+This will pick a specific commit
+
+参考：https://github.com/babel/babel/pull/6056/files#r137702263
+
 ## Webpack
 
 ### dynamic require all modules from directory
