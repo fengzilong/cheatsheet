@@ -165,6 +165,12 @@ $ nvm list
 $ nvm use <version>
 ```
 
+## chrome
+
+### chrome offline dinosaur game
+
+chrome://dino/
+
 ## yrm
 
 ### install yrm
