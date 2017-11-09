@@ -78,6 +78,7 @@ Shift + 点击Elements面板侧边栏中的某个色值，切换颜色格式
 Ctrl + 点击Elements面板侧边栏的某个样式，寻找样式所在文件位置
 Alt + <- 后退
 Alt + -> 前进
+Command + Option + F 在所有源码中查找
 ```
 
 ### Atom
