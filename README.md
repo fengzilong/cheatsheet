@@ -364,6 +364,12 @@ $ npm config get prefix
 
 参考：https://github.com/commitizen/cz-cli
 
+### npm help scripts
+
+```bash
+$ npm help scripts
+```
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
