@@ -905,6 +905,15 @@ from [otto](https://github.com/robertkrimen/otto/blob/master/type_function.go#L2
 
 参考：https://github.com/ai/nanoevents/blob/f445d5fe7beccdb5ae0c57858444fe9a8b7c38e7/index.js#L66
 
+### add font-family via js
+
+```js
+const iconfont = new FontFace(fontFamily, 'url(' + uri + ')');
+document.fonts.add(iconfont);
+```
+
+参考：[rax-icon](https://github.com/alibaba/rax/blob/fd216de80df3910c7c0f4108d254d985e1b4dd79/packages/rax-icon/src/index.js#L33-L35)
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
