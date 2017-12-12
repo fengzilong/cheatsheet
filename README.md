@@ -914,6 +914,12 @@ document.fonts.add(iconfont);
 
 参考：[rax-icon](https://github.com/alibaba/rax/blob/fd216de80df3910c7c0f4108d254d985e1b4dd79/packages/rax-icon/src/index.js#L33-L35)
 
+### 8 immutable arrays operations you should know
+
+![](https://i.loli.net/2017/12/12/5a2f9eb4c9749.png)
+
+参考：https://twitter.com/lukejacksonn/status/928244319760220160
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
