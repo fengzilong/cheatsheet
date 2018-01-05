@@ -371,6 +371,12 @@ $ npm config get prefix
 $ npm help scripts
 ```
 
+### transfer package ownership to others
+
+```bash
+$ npm owner add <username> <packagename>
+```
+
 ### more npm tricks
 
 [...more npm tricks](https://gist.github.com/AvnerCohen/4051934)
