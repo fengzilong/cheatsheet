@@ -487,6 +487,12 @@ type ".editor" in your node REPL for multiline support, and hit ^D to execute
 
 参考：https://twitter.com/atticoos/status/893496002933657600
 
+### delete require cache
+
+```js
+delete require.cache[ require.resolve( '../../runners.json' ) ]
+```
+
 ## Atom
 
 ### solve conflicts with emmet-atom and autocomplete-plus
