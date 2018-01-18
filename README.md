@@ -932,6 +932,12 @@ document.fonts.add(iconfont);
 
 参考：https://twitter.com/lukejacksonn/status/928244319760220160
 
+### 9 get language in browser
+
+```js
+navigator.language // "zh-CN"
+```
+
 ## JavaScript Snippets
 
 ### how to slice arguments without leaking them
