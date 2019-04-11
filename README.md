@@ -1153,3 +1153,7 @@ https://twitter.com/dan_abramov/status/793124347573665796
 ### try it on codepen
 
 <img src="http://blog.codepen.io/wp-content/uploads/2012/06/TryItOn-CodePen.png" height="50" />
+
+### Open in gitpod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/firefox-devtools/profiler)
