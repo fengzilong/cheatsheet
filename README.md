@@ -1157,3 +1157,13 @@ https://twitter.com/dan_abramov/status/793124347573665796
 ### Open in gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/firefox-devtools/profiler)
+
+### 暗中观察
+
+> ┻┳|  
+> ┳┻| _  
+> ┻┳| •.•) 💬 *"Tip: Use [pikapkg.com](https://www.pikapkg.com) to find modern, web-ready packages on npm :)"*  
+> ┳┻|⊂ﾉ     
+> ┻┳|  
+
+from: https://github.com/pikapkg/web
